@@ -17,9 +17,14 @@ export default function checkAnswer() {
     if ((answer === 'yes' && isEven(number) === true) || (answer === 'no' && isEven(number) === false)) {
       console.log('Correct!');
       return true;
-    }
-    console.log(`"${answer}" is wrong answer ;(. Correct answer was "no".
+    } else if (isEven(number) === false) {
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was "no".
 Let's try again, ${userName()}!`);
+    } else {
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was "yes".
+Let's try again, ${userName()}!`);
+    }
+
     return false;
   };
 
