@@ -12,3 +12,6 @@ jobs:
       - uses: hallee/eslint-action@master
         with:
           repo-token: ${{secrets.GITHUB_TOKEN}}
+      - name: Run linter
+        run:
+          make lint
