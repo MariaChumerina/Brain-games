@@ -11,4 +11,5 @@ export default function play() {
     }
   }
   console.log(`Congratulations, ${userName()}!`);
+  return true;
 }
