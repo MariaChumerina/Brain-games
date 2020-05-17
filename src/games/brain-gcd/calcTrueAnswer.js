@@ -1,4 +1,4 @@
-export default function calcTrueAnswer(answer, condition) {
+export default function calcTrueAnswer(condition) {
   const numbers = condition.split(' ');
   const firstNumber = Number(numbers[0]);
   const secondNumber = Number(numbers[1]);

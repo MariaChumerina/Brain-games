@@ -1,4 +1,4 @@
-export default function calcTrueAnswer(answer, condition) {
+export default function calcTrueAnswer(condition) {
     const partsOfExpression = condition.split(' ');
     const operator = partsOfExpression[1];
     const firstOperand = Number(partsOfExpression[0]);

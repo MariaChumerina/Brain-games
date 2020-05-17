@@ -10,9 +10,8 @@ export default function index(rule, makeCondition, calcTrueAnswer) {
     const condition = makeCondition();
     console.log(`Question: ${condition}`);
     const answer = readlineSync.question('Your answer: ');
-    const trueAnswer = calcTrueAnswer(answer, condition);
+    const trueAnswer = calcTrueAnswer(condition);
     if (answer !== trueAnswer) {
-      console.log(typeof answer, typeof trueAnswer);
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${trueAnswer}".
 Let's try again, ${userName()}!`);
       return false;
