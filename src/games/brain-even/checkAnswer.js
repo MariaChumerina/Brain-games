@@ -1,18 +1,9 @@
-import readlineSync from 'readline-sync';
 import { userName } from '../../cli.js';
+import { number } from "./generatorQuestion.js";
 
-export default function checkAnswer() {
-  let number;
-
-  const randomNumber = () => {
-    number = Math.floor(Math.random() * 101);
-    return number;
-  };
-
+export default function checkAnswer(answer) {
   const isEven = () => number % 2 === 0;
 
-  console.log(`Question: ${randomNumber()}`);
-  const answer = readlineSync.question('Your answer: ');
   const isAnswerRight = () => {
     if ((answer === 'yes' && isEven(number) === true) || (answer === 'no' && isEven(number) === false)) {
       console.log('Correct!');
