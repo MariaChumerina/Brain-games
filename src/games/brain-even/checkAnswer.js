@@ -1,5 +1,5 @@
 import { userName } from '../../cli.js';
-import { number } from "./generatorQuestion.js";
+import { number } from "../../rules.js";
 
 export default function checkAnswer(answer) {
   const isEven = () => number % 2 === 0;
