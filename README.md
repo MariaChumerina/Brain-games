@@ -2,7 +2,21 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Node CI](https://github.com/MariaChumerina/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/MariaChumerina/frontend-project-lvl1/actions)
 
-Training project at hexlet.io
+<b>Brain Games</b> - a five console games. Each game asks questions that need to be answered correctly. 
+After three correct answers - happy end:) 
+Wrong answers complete the game and offer to pass it again. 
+
+Games:
+
+Determination of an even number.
+Calculator. Arithmetic expressions to be evaluated.
+Determination of the greatest common divider.
+Progression. Search for missing numbers in a sequence of numbers.
+Definition of a prime number.
+
+<b>installation:</b>
+open cosole -> make install -> name of game
+see further examples of games
 <br/>
 <br/>
 <b>Brain-even:</b><br/>
@@ -12,4 +26,6 @@ Training project at hexlet.io
 <b>Brain-gcd:</b><br/>
 [![asciicast](https://asciinema.org/a/Up979flzA5CpDm9fqGdrDw6Bz.svg)](https://asciinema.org/a/Up979flzA5CpDm9fqGdrDw6Bz)<br/>
 <b>Brain-progression:</b><br/>
-[![asciicast](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO.svg)](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO)
+[![asciicast](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO.svg)](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO)<br/>
+<b>Brain-prime:</b><br/>
+[![asciicast](https://asciinema.org/a/UNqqTzknEtakkLlUoPMfJt6Cp.svg)](https://asciinema.org/a/UNqqTzknEtakkLlUoPMfJt6Cp)
