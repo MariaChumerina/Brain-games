@@ -6,7 +6,6 @@ export default function checkAnswer(answer) {
 
   const isAnswerRight = () => {
     if ((answer === 'yes' && isEven(number) === true) || (answer === 'no' && isEven(number) === false)) {
-      console.log('Correct!');
       return true;
     } if (isEven(number) === false) {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "no".

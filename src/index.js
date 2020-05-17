@@ -12,6 +12,7 @@ export default function index(rule, question) {
     if (checkAnswer(answer) === false) {
       return false;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName()}!`);
   return true;
