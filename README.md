@@ -7,4 +7,6 @@ Training project at hexlet.io
 <b>Brain Even:</b><br/>
 [![asciicast](https://asciinema.org/a/r6gl7a4gSCKZHzVTbldgbIvE2.svg)](https://asciinema.org/a/r6gl7a4gSCKZHzVTbldgbIvE2)<br/>
 <b>Brain Calc:</b><br/>
-[![asciicast](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo.svg)](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo)
+[![asciicast](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo.svg)](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo)<br/>
+<b>Brain Gcd:</b><br/>
+[![asciicast](https://asciinema.org/a/Up979flzA5CpDm9fqGdrDw6Bz.svg)](https://asciinema.org/a/Up979flzA5CpDm9fqGdrDw6Bz)
