@@ -9,7 +9,7 @@ export function makeExpression() {
 }
 
 export function makeTwoNumbers() {
-  return `${randomNumber()} ${randomNumber()}`;
+  return `${randomNumber(100, 1)} ${randomNumber(100, 1)}`;
 }
 
 export function makeProgression() {
