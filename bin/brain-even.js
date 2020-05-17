@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { greeting } from '../src/cli.js';
-import play from '../src/games/brain-even/play.js';
+import index from '../src/index.js';
+import { rules } from "../src/rules.js";
 
 greeting();
-play();
+index(rules.brainEven);
