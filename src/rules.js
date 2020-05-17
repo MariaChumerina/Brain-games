@@ -9,6 +9,6 @@ export function randomNumber() {
 
 const operators = ['+', '-', '*'];
 export function makeExpression() {
-  const operator = operators[Math.floor(Math.random() * 3)];
-  return `${randomNumber()} ${operator} ${randomNumber()}`;
+  const randomOperator = operators[Math.floor(Math.random() * 3)];
+  return `${randomNumber()} ${randomOperator} ${randomNumber()}`;
 }
