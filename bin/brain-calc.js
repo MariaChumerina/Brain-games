@@ -2,7 +2,7 @@
 import index from '../src/index.js';
 import { makeExpression } from '../src/questions.js';
 import { rules } from '../src/cli.js';
-import checkAnswer from '../src/games/brain-calc/checkAnswer.js';
+import calcTrueAnswer from '../src/games/brain-calc/calcTrueAnswer.js';
 
 
-index(rules.brainCalc, makeExpression, checkAnswer);
+index(rules.brainCalc, makeExpression, calcTrueAnswer);

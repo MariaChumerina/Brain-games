@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { userName, greeting } from './cli.js';
 
-export default function index(rule, makeCondition, checkFunction) {
+export default function index(rule, makeCondition, calcTrueAnswer) {
   const countOfLevels = 3;
 
   greeting();
@@ -10,7 +10,11 @@ export default function index(rule, makeCondition, checkFunction) {
     const condition = makeCondition();
     console.log(`Question: ${condition}`);
     const answer = readlineSync.question('Your answer: ');
-    if (checkFunction(answer, condition) === false) {
+    const trueAnswer = calcTrueAnswer(answer, condition);
+    if (answer !== trueAnswer) {
+      console.log(typeof answer, typeof trueAnswer);
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${trueAnswer}".
+Let's try again, ${userName()}!`);
       return false;
     }
     console.log('Correct!');
