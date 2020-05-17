@@ -15,7 +15,7 @@ Progression. Search for missing numbers in a sequence of numbers.<br/>
 Definition of a prime number.<br/>
 
 <b>installation:</b>
-open cosole -> make install -> name of game
+open cosole -> make install -> name of game<br/>
 see further examples of games
 <br/>
 <br/>
