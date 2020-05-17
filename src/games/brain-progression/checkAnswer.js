@@ -16,7 +16,7 @@ export default function checkAnswer(answer, condition) {
     }
     return indexOfMissEl
       ? Number(progression[indexOfMissEl - 1]) + Number(step)
-      : Number(progression[indexOfMissEl + 1]) + Number(step);
+      : Number(progression[indexOfMissEl + 1]) - Number(step);
   }
   const trueAnswer = calcTrueAnswer();
 
