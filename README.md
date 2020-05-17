@@ -8,11 +8,11 @@ Wrong answers complete the game and offer to pass it again.
 
 Games:
 
-Determination of an even number.
-Calculator. Arithmetic expressions to be evaluated.
-Determination of the greatest common divider.
-Progression. Search for missing numbers in a sequence of numbers.
-Definition of a prime number.
+Determination of an even number.<br/>
+Calculator. Arithmetic expressions to be evaluated.<br/>
+Determination of the greatest common divider.<br/>
+Progression. Search for missing numbers in a sequence of numbers.<br/>
+Definition of a prime number.<br/>
 
 <b>installation:</b>
 open cosole -> make install -> name of game
