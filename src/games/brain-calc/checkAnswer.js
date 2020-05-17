@@ -1,16 +1,14 @@
 import { userName } from '../../cli.js';
-import { expression } from "../../rules.js";
 
-export default function checkAnswer(answer) {
-  const trueAnswer = eval(expression);
+export default function checkAnswer(answer, condition) {
+  /* eslint no-eval: 0 */
+  const trueAnswer = eval(condition);
 
   const isAnswerRight = () => {
     if (Number(answer) === trueAnswer) {
       return true;
-    }  else {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${trueAnswer}".
+    } console.log(`"${answer}" is wrong answer ;(. Correct answer was "${trueAnswer}".
 Let's try again, ${userName()}!`);
-    }
     return false;
   };
 

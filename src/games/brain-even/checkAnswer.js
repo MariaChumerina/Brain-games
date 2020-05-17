@@ -1,13 +1,12 @@
 import { userName } from '../../cli.js';
-import { number } from "../../rules.js";
 
-export default function checkAnswer(answer) {
-  const isEven = () => number % 2 === 0;
+export default function checkAnswer(answer, condition) {
+  const isEven = () => condition % 2 === 0;
 
   const isAnswerRight = () => {
-    if ((answer === 'yes' && isEven(number) === true) || (answer === 'no' && isEven(number) === false)) {
+    if ((answer === 'yes' && isEven(condition) === true) || (answer === 'no' && isEven(condition) === false)) {
       return true;
-    } if (isEven(number) === false) {
+    } if (isEven(condition) === false) {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "no".
 Let's try again, ${userName()}!`);
     } else {
