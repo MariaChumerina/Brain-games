@@ -9,4 +9,12 @@ export function randomNumber() {
   return number;
 }
 
+export let expression;
+const operators = ['+', '-', '*'];
+export function makeExpression() {
+  const operator = operators[Math.floor(Math.random() * 2)];
+  expression = `${randomNumber()} ${operator} ${randomNumber()}`;
+  return expression;
+}
+
 
