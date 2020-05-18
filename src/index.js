@@ -1,5 +1,5 @@
-import readlineSync from 'readline-sync';
 import { getUserName, greeting } from './cli.js';
+import { getAnswerFromUser } from './cli.js';
 
 export default function index(rule, getQuestion, getTrueAnswer) {
   const countOfRounds = 3;
@@ -9,10 +9,10 @@ export default function index(rule, getQuestion, getTrueAnswer) {
   for (let round = 1; round <= countOfRounds; round += 1) {
     const question = getQuestion();
     console.log(`Question: ${question}`);
-    const answer = readlineSync.question('Your answer: ');
+    const answerFromUser = getAnswerFromUser();
     const trueAnswer = getTrueAnswer(question);
-    if (answer !== trueAnswer) {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${trueAnswer}".
+    if (answerFromUser !== trueAnswer) {
+      console.log(`"${answerFromUser}" is wrong answer ;(. Correct answer was "${trueAnswer}".
 Let's try again, ${getUserName()}!`);
       return false;
     }
