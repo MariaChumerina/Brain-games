@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import index from '../src/index.js';
-import { randomNumber } from '../src/questions.js';
+import { getRandomNumber } from '../src/questions.js';
 import { rules } from '../src/cli.js';
-import calcTrueAnswer from '../src/games/brain-even/calcTrueAnswer.js';
+import isEven from '../src/games/brain-even/isEven.js';
 
-index(rules.brainEven, randomNumber, calcTrueAnswer);
+index(rules.brainEven, getRandomNumber, isEven);

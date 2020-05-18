@@ -1,4 +1,4 @@
-export default function calcTrueAnswer(condition) {
+export default function getTrueAnswer(condition) {
   const progression = condition.split(' ');
   const indexOfMissEl = progression.indexOf('..');
   let step = 0;

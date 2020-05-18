@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import index from '../src/index.js';
-import { makeProgression } from '../src/questions.js';
+import { getProgression } from '../src/questions.js';
 import { rules } from '../src/cli.js';
-import calcTrueAnswer from '../src/games/brain-progression/calcTrueAnswer.js';
+import getTrueAnswer from '../src/games/brain-progression/getTrueAnswer.js';
 
 
-index(rules.brainProgression, makeProgression, calcTrueAnswer);
+index(rules.brainProgression, getProgression, getTrueAnswer);

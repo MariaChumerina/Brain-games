@@ -1,5 +1,5 @@
-export default function calcTrueAnswer(condition) {
-  const numbers = condition.split(' ');
+export default function getGCD(twoNumbers) {
+  const numbers = twoNumbers.split(' ');
   const firstNumber = Number(numbers[0]);
   const secondNumber = Number(numbers[1]);
   for (let i = secondNumber; i > 1; i -= 1) {

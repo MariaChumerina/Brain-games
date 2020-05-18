@@ -1,24 +1,24 @@
-export function randomNumber(rightBorder = 100, leftBorder = 1) {
+export function getRandomNumber(rightBorder = 100, leftBorder = 1) {
   return Math.floor((Math.random() * rightBorder) + leftBorder);
 }
 
 const operators = ['+', '-', '*'];
-export function makeExpression() {
-  const randomOperator = operators[randomNumber(3, 0)];
-  return `${randomNumber()} ${randomOperator} ${randomNumber()}`;
+export function getExpression() {
+  const randomOperator = operators[getRandomNumber(3, 0)];
+  return `${getRandomNumber()} ${randomOperator} ${getRandomNumber()}`;
 }
 
-export function makeTwoNumbers() {
-  return `${randomNumber(100, 1)} ${randomNumber(100)}`;
+export function getTwoRandomNumbers() {
+  return `${getRandomNumber(100, 1)} ${getRandomNumber(100)}`;
 }
 
-export function makeProgression() {
+export function getProgression() {
   const progression = [];
-  progression[0] = randomNumber(10);
-  const step = randomNumber(10);
+  progression[0] = getRandomNumber(10);
+  const step = getRandomNumber(10);
   for (let i = 1; i < 10; i += 1) {
     progression[i] = progression[i - 1] + step;
   }
-  progression[randomNumber(9, 0)] = '..';
+  progression[getRandomNumber(9, 0)] = '..';
   return progression.join(' ');
 }

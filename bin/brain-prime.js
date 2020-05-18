@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import index from '../src/index.js';
-import { randomNumber } from '../src/questions.js';
+import { getRandomNumber } from '../src/questions.js';
 import { rules } from '../src/cli.js';
-import calcTrueAnswer from '../src/games/brain-prime/calcTrueAnswer.js';
+import isPrime from '../src/games/brain-prime/isPrime.js';
 
 
-index(rules.brainPrime, randomNumber, calcTrueAnswer);
+index(rules.brainPrime, getRandomNumber, isPrime);
