@@ -1,5 +1,4 @@
-import { getUserName, greeting } from './cli.js';
-import { getAnswerFromUser } from './cli.js';
+import { getUserName, getAnswerFromUser, greeting } from './cli.js';
 
 export default function index(rule, getQuestion, getTrueAnswer) {
   const countOfRounds = 3;
