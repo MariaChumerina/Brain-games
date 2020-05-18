@@ -4,5 +4,3 @@ function isEven(number) {
 export default function transformIsEvenToStr(number) {
   return isEven(number) ? 'yes' : 'no';
 }
-
-
