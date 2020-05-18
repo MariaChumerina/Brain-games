@@ -1,8 +1,11 @@
-export default function isPrime(number) {
+function isPrime(number) {
   for (let i = Math.round(number / 2); i > 1; i -= 1) {
     if (number % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
+}
+export default function transformIsPrimeToStr(number) {
+  return isPrime(number) ? 'yes' : 'no';
 }

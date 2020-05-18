@@ -1,6 +1,8 @@
-export default function isEven(number) {
-  if (number % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
+function isEven(number) {
+  return number % 2 === 0;
 }
+export default function transformIsEvenToStr(number) {
+  return isEven(number) ? 'yes' : 'no';
+}
+
+
