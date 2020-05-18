@@ -2,7 +2,7 @@
 import index from '../src/index.js';
 import { getProgression } from '../src/questions.js';
 import { rules } from '../src/cli.js';
-import getTrueAnswer from '../src/games/brain-progression/getTrueAnswer.js';
+import getMissingNumber from '../src/games/brain-progression/getMissingNumber.js';
 
 
-index(rules.brainProgression, getProgression, getTrueAnswer);
+index(rules.brainProgression, getProgression, getMissingNumber);

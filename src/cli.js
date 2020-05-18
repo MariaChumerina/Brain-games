@@ -8,7 +8,7 @@ export function greeting() {
   console.log(`Hello, ${name}!`);
 }
 
-export function userName() {
+export function getUserName() {
   return name;
 }
 

@@ -2,7 +2,7 @@
 import index from '../src/index.js';
 import { getExpression } from '../src/questions.js';
 import { rules } from '../src/cli.js';
-import getMisiingNumber from '../src/games/brain-calc/getMisiingNumber.js';
+import getResultOfExpression from '../src/games/brain-calc/getResultOfExpression.js';
 
 
-index(rules.brainCalc, getExpression, getMisiingNumber);
+index(rules.brainCalc, getExpression, getResultOfExpression);

@@ -1,5 +1,5 @@
-export default function getGCD(twoNumbers) {
-  const numbers = twoNumbers.split(' ');
+export default function getGCD(strWithTwoNumbers) {
+  const numbers = strWithTwoNumbers.split(' ');
   const firstNumber = Number(numbers[0]);
   const secondNumber = Number(numbers[1]);
   for (let i = secondNumber; i > 1; i -= 1) {
