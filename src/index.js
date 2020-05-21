@@ -1,9 +1,9 @@
-import { userName, getAnswerFromUser, greeting } from './cli.js';
+import { greeting, getAnswerFromUser } from './cli.js';
 
 export default function index(rule, getQuestion, getTrueAnswer) {
   const countOfRounds = 3;
 
-  greeting();
+  const userName = greeting();
   console.log(rule);
   for (let round = 1; round <= countOfRounds; round += 1) {
     const question = getQuestion();
