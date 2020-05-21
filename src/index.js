@@ -1,4 +1,4 @@
-import { getUserName, getAnswerFromUser, greeting } from './cli.js';
+import { userName, getAnswerFromUser, greeting } from './cli.js';
 
 export default function index(rule, getQuestion, getTrueAnswer) {
   const countOfRounds = 3;
@@ -12,11 +12,11 @@ export default function index(rule, getQuestion, getTrueAnswer) {
     const trueAnswer = getTrueAnswer(question);
     if (answerFromUser !== trueAnswer) {
       console.log(`"${answerFromUser}" is wrong answer ;(. Correct answer was "${trueAnswer}".
-Let's try again, ${getUserName()}!`);
+Let's try again, ${userName}!`);
       return false;
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${getUserName()}!`);
+  console.log(`Congratulations, ${userName}!`);
   return true;
 }
