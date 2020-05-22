@@ -1,4 +1,4 @@
-function isPrime(number) {
+function index(number) {
   for (let i = Math.round(number / 2); i > 1; i -= 1) {
     if (number % i === 0) {
       return false;
@@ -7,5 +7,5 @@ function isPrime(number) {
   return true;
 }
 export default function transformIsPrimeToStr(number) {
-  return isPrime(number) ? 'yes' : 'no';
+  return index(number) ? 'yes' : 'no';
 }
