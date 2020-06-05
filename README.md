@@ -28,4 +28,4 @@ see further examples of games
 <b>Brain-progression:</b><br/>
 [![asciicast](https://asciinema.org/a/XrVnGtvILZFM2EwOl2jGMxqzQ.svg)](https://asciinema.org/a/XrVnGtvILZFM2EwOl2jGMxqzQ)<br/>
 <b>Brain-prime:</b><br/>
-[![asciicast](https://asciinema.org/a/UNqqTzknEtakkLlUoPMfJt6Cp.svg)](https://asciinema.org/a/UNqqTzknEtakkLlUoPMfJt6Cp)
+[![asciicast](https://asciinema.org/a/spra2etYEGi0h3itj14LlVgcH.svg)](https://asciinema.org/a/spra2etYEGi0h3itj14LlVgcH)
