@@ -22,7 +22,7 @@ see further examples of games
 <b>Brain-even:</b><br/>
 [![asciicast](https://asciinema.org/a/dLAHe3OOH6XN5uzUfXa2DT9yl.svg)](https://asciinema.org/a/dLAHe3OOH6XN5uzUfXa2DT9yl)<br/>
 <b>Brain-calc:</b><br/>
-[![asciicast](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo.svg)](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo)<br/>
+[![asciicast](https://asciinema.org/a/YWkTLB00aZnxtZt6BzbrSUegL.svg)](https://asciinema.org/a/YWkTLB00aZnxtZt6BzbrSUegL)<br/>
 <b>Brain-gcd:</b><br/>
 [![asciicast](https://asciinema.org/a/JLrSpUFVfCfHSBWYyETsxdcgR.svg)](https://asciinema.org/a/JLrSpUFVfCfHSBWYyETsxdcgR)<br/>
 <b>Brain-progression:</b><br/>
