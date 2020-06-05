@@ -1,4 +1,4 @@
-import { getExpression } from '../../utils';
+import { getExpression } from '../../utils.js';
 
 export function getTrueAnswer(strOfExpression) {
   const partsOfExpression = strOfExpression.split(' ');

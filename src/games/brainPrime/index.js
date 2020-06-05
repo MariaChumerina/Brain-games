@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../../utils';
+import { getRandomNumber } from '../../utils.js';
 
 function isPrime(number) {
   for (let i = Math.round(number / 2); i > 1; i -= 1) {

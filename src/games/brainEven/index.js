@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../../utils';
+import { getRandomNumber } from '../../utils.js';
 
 function isEven(number) {
   return number % 2 === 0;

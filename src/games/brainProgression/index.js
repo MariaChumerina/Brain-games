@@ -1,4 +1,4 @@
-import { getProgression } from '../../utils';
+import { getProgression } from '../../utils.js';
 
 export function getTrueAnswer(strOfProgression) {
   const partsOfProgression = strOfProgression.split(' ');
