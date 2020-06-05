@@ -24,7 +24,7 @@ see further examples of games
 <b>Brain-calc:</b><br/>
 [![asciicast](https://asciinema.org/a/YWkTLB00aZnxtZt6BzbrSUegL.svg)](https://asciinema.org/a/YWkTLB00aZnxtZt6BzbrSUegL)<br/>
 <b>Brain-gcd:</b><br/>
-[![asciicast](https://asciinema.org/a/JLrSpUFVfCfHSBWYyETsxdcgR.svg)](https://asciinema.org/a/JLrSpUFVfCfHSBWYyETsxdcgR)<br/>
+[![asciicast](https://asciinema.org/a/z4ORgSlkc5GChgGgbDfUmYLO9.svg)](https://asciinema.org/a/z4ORgSlkc5GChgGgbDfUmYLO9)<br/>
 <b>Brain-progression:</b><br/>
 [![asciicast](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO.svg)](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO)<br/>
 <b>Brain-prime:</b><br/>
