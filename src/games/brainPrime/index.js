@@ -6,6 +6,8 @@ function index(number) {
   }
   return true;
 }
-export default function transformIsPrimeToStr(number) {
+export function transformIsPrimeToStr(number) {
   return index(number) ? 'yes' : 'no';
 }
+
+export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';

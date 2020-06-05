@@ -1,4 +1,4 @@
-export default function getMissingNumber(strOfProgression) {
+export function getMissingNumber(strOfProgression) {
   const partsOfProgression = strOfProgression.split(' ');
   const indexOfMissEl = partsOfProgression.indexOf('..');
   let step = 0;
@@ -15,3 +15,5 @@ export default function getMissingNumber(strOfProgression) {
     ? (Number(partsOfProgression[indexOfMissEl - 1]) + Number(step)).toString()
     : (Number(partsOfProgression[indexOfMissEl + 1]) - Number(step)).toString();
 }
+
+export const rule = 'What number is missing in the progression?';

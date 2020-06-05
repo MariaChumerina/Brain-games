@@ -1,4 +1,4 @@
-export default function getGCD(strWithTwoNumbers) {
+export function getGCD(strWithTwoNumbers) {
   const numbers = strWithTwoNumbers.split(' ');
   const firstNumber = Number(numbers[0]);
   const secondNumber = Number(numbers[1]);
@@ -9,3 +9,5 @@ export default function getGCD(strWithTwoNumbers) {
   }
   return '1';
 }
+
+export const rule = 'Find the greatest common divisor of given numbers.';

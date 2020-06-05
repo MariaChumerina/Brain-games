@@ -1,4 +1,4 @@
-export default function getResultOfExpression(strOfExpression) {
+export function getResultOfExpression(strOfExpression) {
   const partsOfExpression = strOfExpression.split(' ');
   const operator = partsOfExpression[1];
   const firstOperand = Number(partsOfExpression[0]);
@@ -7,3 +7,5 @@ export default function getResultOfExpression(strOfExpression) {
   if (operator === '*') return (firstOperand * secondOperand).toString();
   return (firstOperand - secondOperand).toString();
 }
+
+export const rule = 'What is the result of the expression?';
