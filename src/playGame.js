@@ -1,6 +1,6 @@
 import { greeting, getAnswerFromUser } from './cli.js';
 
-export default function index(game) {
+export default function playGame(game) {
   const countOfRounds = 3;
 
   const userName = greeting();

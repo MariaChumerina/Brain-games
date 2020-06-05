@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import index from '../src/index.js';
+import playGame from '../src/playGame.js';
 import * as brainCalc from '../src/games/brainCalc/index.js';
 
 
-index(brainCalc);
+playGame(brainCalc);
