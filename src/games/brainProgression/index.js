@@ -1,4 +1,6 @@
-export function getMissingNumber(strOfProgression) {
+import { getProgression } from '../../utils';
+
+export function getTrueAnswer(strOfProgression) {
   const partsOfProgression = strOfProgression.split(' ');
   const indexOfMissEl = partsOfProgression.indexOf('..');
   let step = 0;
@@ -17,3 +19,7 @@ export function getMissingNumber(strOfProgression) {
 }
 
 export const rule = 'What number is missing in the progression?';
+
+export function getQuestion() {
+  return getProgression();
+}

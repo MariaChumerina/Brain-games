@@ -1,4 +1,6 @@
-export function getResultOfExpression(strOfExpression) {
+import { getExpression } from '../../utils';
+
+export function getTrueAnswer(strOfExpression) {
   const partsOfExpression = strOfExpression.split(' ');
   const operator = partsOfExpression[1];
   const firstOperand = Number(partsOfExpression[0]);
@@ -9,3 +11,7 @@ export function getResultOfExpression(strOfExpression) {
 }
 
 export const rule = 'What is the result of the expression?';
+
+export function getQuestion() {
+  return getExpression();
+}

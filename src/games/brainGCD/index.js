@@ -1,4 +1,6 @@
-export function getGCD(strWithTwoNumbers) {
+import { getTwoRandomNumbers } from '../../utils.js';
+
+export function getTrueAnswer(strWithTwoNumbers) {
   const numbers = strWithTwoNumbers.split(' ');
   const firstNumber = Number(numbers[0]);
   const secondNumber = Number(numbers[1]);
@@ -11,3 +13,7 @@ export function getGCD(strWithTwoNumbers) {
 }
 
 export const rule = 'Find the greatest common divisor of given numbers.';
+
+export function getQuestion() {
+  return getTwoRandomNumbers();
+}

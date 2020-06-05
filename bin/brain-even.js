@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import index from '../src/index.js';
-import { getRandomNumber } from '../src/utils.js';
-import { transformIsEvenToStr, rule } from '../src/games/brainEven/index.js';
+import * as brainEven from '../src/games/brainGCD/index.js';
 
-index(rule, getRandomNumber, transformIsEvenToStr);
+index(brainEven);

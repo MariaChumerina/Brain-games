@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import index from '../src/index.js';
-import { getExpression } from '../src/utils.js';
-import { getResultOfExpression, rule } from '../src/games/brainCalc/index.js';
+import * as brainCalc from '../src/games/brainGCD/index.js';
 
 
-index(rule, getExpression, getResultOfExpression);
+index(brainCalc);
