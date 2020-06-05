@@ -20,12 +20,12 @@ see further examples of games
 <br/>
 <br/>
 <b>Brain-even:</b><br/>
-[![asciicast](https://asciinema.org/a/r6gl7a4gSCKZHzVTbldgbIvE2.svg)](https://asciinema.org/a/r6gl7a4gSCKZHzVTbldgbIvE2)<br/>
+[![asciicast](https://asciinema.org/a/dLAHe3OOH6XN5uzUfXa2DT9yl.svg)](https://asciinema.org/a/dLAHe3OOH6XN5uzUfXa2DT9yl)<br/>
 <b>Brain-calc:</b><br/>
-[![asciicast](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo.svg)](https://asciinema.org/a/2pfDQZhwjh0342tOTsRhI7qeo)<br/>
+[![asciicast](https://asciinema.org/a/YWkTLB00aZnxtZt6BzbrSUegL.svg)](https://asciinema.org/a/YWkTLB00aZnxtZt6BzbrSUegL)<br/>
 <b>Brain-gcd:</b><br/>
-[![asciicast](https://asciinema.org/a/JLrSpUFVfCfHSBWYyETsxdcgR.svg)](https://asciinema.org/a/JLrSpUFVfCfHSBWYyETsxdcgR)<br/>
+[![asciicast](https://asciinema.org/a/z4ORgSlkc5GChgGgbDfUmYLO9.svg)](https://asciinema.org/a/z4ORgSlkc5GChgGgbDfUmYLO9)<br/>
 <b>Brain-progression:</b><br/>
-[![asciicast](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO.svg)](https://asciinema.org/a/YTw7oOC9FYHbzXvifCkx2dVdO)<br/>
+[![asciicast](https://asciinema.org/a/XrVnGtvILZFM2EwOl2jGMxqzQ.svg)](https://asciinema.org/a/XrVnGtvILZFM2EwOl2jGMxqzQ)<br/>
 <b>Brain-prime:</b><br/>
-[![asciicast](https://asciinema.org/a/UNqqTzknEtakkLlUoPMfJt6Cp.svg)](https://asciinema.org/a/UNqqTzknEtakkLlUoPMfJt6Cp)
+[![asciicast](https://asciinema.org/a/spra2etYEGi0h3itj14LlVgcH.svg)](https://asciinema.org/a/spra2etYEGi0h3itj14LlVgcH)
