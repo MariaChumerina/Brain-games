@@ -1,4 +1,4 @@
-import { getExpression } from '../../utils.js';
+import { getRandomNumber } from '../../utils.js';
 
 export function getTrueAnswer(strOfExpression) {
   const partsOfExpression = strOfExpression.split(' ');
@@ -11,6 +11,13 @@ export function getTrueAnswer(strOfExpression) {
 }
 
 export const rule = 'What is the result of the expression?';
+
+const operators = ['+', '-', '*'];
+
+function getExpression() {
+  const randomOperator = operators[getRandomNumber(3, 0)];
+  return `${getRandomNumber()} ${randomOperator} ${getRandomNumber()}`;
+}
 
 export function getQuestion() {
   return getExpression();

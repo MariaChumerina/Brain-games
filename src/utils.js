@@ -2,12 +2,6 @@ export function getRandomNumber(rightBorder = 100, leftBorder = 1) {
   return Math.floor((Math.random() * rightBorder) + leftBorder);
 }
 
-const operators = ['+', '-', '*'];
-export function getExpression() {
-  const randomOperator = operators[getRandomNumber(3, 0)];
-  return `${getRandomNumber()} ${randomOperator} ${getRandomNumber()}`;
-}
-
 export function getTwoRandomNumbers() {
   return `${getRandomNumber(100, 1)} ${getRandomNumber(100)}`;
 }
