@@ -6,6 +6,7 @@ export function getTwoRandomNumbers() {
   return `${getRandomNumber(100, 1)} ${getRandomNumber(100)}`;
 }
 
+
 export function getProgression() {
   const progression = [];
   progression[0] = getRandomNumber(10);
@@ -13,6 +14,7 @@ export function getProgression() {
   for (let i = 1; i < 10; i += 1) {
     progression[i] = progression[i - 1] + step;
   }
-  progression[getRandomNumber(9, 0)] = '..';
+  const randomNumForSkip = getRandomNumber(9, 0);
+  progression[randomNumForSkip] = '..';
   return progression.join(' ');
 }
