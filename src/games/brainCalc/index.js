@@ -1,10 +1,10 @@
 import { getRandomNumber } from '../../utils.js';
 
-export function getTrueAnswer(strOfExpression) {
-  const partsOfExpression = strOfExpression.split(' ');
-  const operator = partsOfExpression[1];
-  const firstOperand = Number(partsOfExpression[0]);
-  const secondOperand = Number(partsOfExpression[2]);
+let operator;
+let firstOperand;
+let secondOperand;
+
+export function getTrueAnswer() {
   if (operator === '+') return (firstOperand + secondOperand).toString();
   if (operator === '*') return (firstOperand * secondOperand).toString();
   return (firstOperand - secondOperand).toString();
@@ -15,8 +15,11 @@ export const rule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 function getExpression() {
-  const randomOperator = operators[getRandomNumber(3, 0)];
-  return `${getRandomNumber()} ${randomOperator} ${getRandomNumber()}`;
+  operator = operators[getRandomNumber(3, 0)];
+  firstOperand = getRandomNumber();
+  secondOperand = getRandomNumber();
+
+  return `${firstOperand} ${operator} ${secondOperand}`;
 }
 
 export function getQuestion() {
