@@ -1,4 +1,4 @@
-import { getProgression, getRandomNumber  } from '../../utils.js';
+import { getProgression, getRandomNumber } from '../../utils.js';
 
 let progression;
 let skippingNumber;
