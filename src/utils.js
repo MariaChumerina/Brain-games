@@ -14,7 +14,6 @@ export function getProgression() {
   for (let i = 1; i < 10; i += 1) {
     progression[i] = progression[i - 1] + step;
   }
-  const randomNumForSkip = getRandomNumber(9, 0);
-  progression[randomNumForSkip] = '..';
-  return progression.join(' ');
+
+  return progression;
 }

@@ -1,25 +1,24 @@
-import { getProgression } from '../../utils.js';
+import { getProgression, getRandomNumber  } from '../../utils.js';
 
-export function getTrueAnswer(strOfProgression) {
-  const partsOfProgression = strOfProgression.split(' ');
-  const indexOfMissEl = partsOfProgression.indexOf('..');
-  let step = 0;
-  let i = 0;
-  while (!step) {
-    const currentEl = partsOfProgression[i];
-    const nextEl = partsOfProgression[i + 1];
-    if (currentEl !== '..' && nextEl !== '..') {
-      step = nextEl - currentEl;
-    }
-    i += 1;
-  }
-  return indexOfMissEl
-    ? (Number(partsOfProgression[indexOfMissEl - 1]) + Number(step)).toString()
-    : (Number(partsOfProgression[indexOfMissEl + 1]) - Number(step)).toString();
+let progression;
+let skippingNumber;
+let indexOfSkippingEl;
+
+export function getTrueAnswer() {
+  return skippingNumber.toString();
 }
 
 export const rule = 'What number is missing in the progression?';
 
+function getProgressionWithSkipNum() {
+  progression = getProgression();
+  indexOfSkippingEl = getRandomNumber(9, 0);
+  skippingNumber = progression[indexOfSkippingEl];
+  progression[indexOfSkippingEl] = '..';
+
+  return progression.join(' ');
+}
+
 export function getQuestion() {
-  return getProgression();
+  return getProgressionWithSkipNum();
 }
