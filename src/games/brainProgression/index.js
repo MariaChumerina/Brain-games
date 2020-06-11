@@ -1,10 +1,11 @@
 import { getProgression, getRandomNumber } from '../../utils.js';
+import playGame from '../../playGame.js';
 
 let progression;
 let skippingNumber;
 let indexOfSkippingEl;
 
-export function getTrueAnswer() {
+function getTrueAnswer() {
   return skippingNumber.toString();
 }
 
@@ -19,6 +20,10 @@ function getProgressionWithSkipNum() {
   return progression.join(' ');
 }
 
-export function getQuestion() {
+function getQuestion() {
   return getProgressionWithSkipNum();
+}
+
+export default function playBrainProgression() {
+  playGame(rule, getQuestion, getTrueAnswer);
 }

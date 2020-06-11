@@ -1,10 +1,11 @@
 import { getRandomNumber } from '../../utils.js';
+import playGame from '../../playGame.js';
 
 let operator;
 let firstOperand;
 let secondOperand;
 
-export function getTrueAnswer() {
+function getTrueAnswer() {
   if (operator === '+') return (firstOperand + secondOperand).toString();
   if (operator === '*') return (firstOperand * secondOperand).toString();
   return (firstOperand - secondOperand).toString();
@@ -22,6 +23,10 @@ function getExpression() {
   return `${firstOperand} ${operator} ${secondOperand}`;
 }
 
-export function getQuestion() {
+function getQuestion() {
   return getExpression();
+}
+
+export default function playBrainCalc() {
+  playGame(rule, getQuestion, getTrueAnswer);
 }

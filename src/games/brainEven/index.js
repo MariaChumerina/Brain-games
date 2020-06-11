@@ -1,14 +1,19 @@
 import { getRandomNumber } from '../../utils.js';
+import playGame from '../../playGame.js';
 
 function isEven(number) {
   return number % 2 === 0;
 }
-export function getTrueAnswer(number) {
+function getTrueAnswer(number) {
   return isEven(number) ? 'yes' : 'no';
 }
 
 export const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export function getQuestion() {
+function getQuestion() {
   return getRandomNumber();
+}
+
+export default function playBrainEven() {
+  playGame(rule, getQuestion, getTrueAnswer);
 }

@@ -1,15 +1,15 @@
 import { greeting, getAnswerFromUser } from './cli.js';
 
-export default function playGame(game) {
+export default function playGame(rule, getQuestion, getTrueAnswer) {
   const countOfRounds = 3;
 
   const userName = greeting();
-  console.log(game.rule);
+  console.log(rule);
   for (let round = 1; round <= countOfRounds; round += 1) {
-    const question = game.getQuestion();
+    const question = getQuestion();
     console.log(`Question: ${question}`);
     const answerFromUser = getAnswerFromUser();
-    const trueAnswer = game.getTrueAnswer(question);
+    const trueAnswer = getTrueAnswer(question);
     if (answerFromUser !== trueAnswer) {
       console.log(`"${answerFromUser}" is wrong answer ;(. Correct answer was "${trueAnswer}".
 Let's try again, ${userName}!`);

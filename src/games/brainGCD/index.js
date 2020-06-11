@@ -1,6 +1,7 @@
 import { getTwoRandomNumbers } from '../../utils.js';
+import playGame from '../../playGame.js';
 
-export function getTrueAnswer(strWithTwoNumbers) {
+function getTrueAnswer(strWithTwoNumbers) {
   const numbers = strWithTwoNumbers.split(' ');
   const firstNumber = Number(numbers[0]);
   const secondNumber = Number(numbers[1]);
@@ -12,8 +13,12 @@ export function getTrueAnswer(strWithTwoNumbers) {
   return '1';
 }
 
-export const rule = 'Find the greatest common divisor of given numbers.';
+const rule = 'Find the greatest common divisor of given numbers.';
 
-export function getQuestion() {
+function getQuestion() {
   return getTwoRandomNumbers();
+}
+
+export default function playBrainGCD() {
+  playGame(rule, getQuestion, getTrueAnswer);
 }
