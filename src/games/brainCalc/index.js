@@ -15,16 +15,12 @@ export const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
-function getExpression() {
+function getQuestion() {
   operator = operators[getRandomNumber(3, 0)];
   firstOperand = getRandomNumber();
   secondOperand = getRandomNumber();
 
   return `${firstOperand} ${operator} ${secondOperand}`;
-}
-
-function getQuestion() {
-  return getExpression();
 }
 
 export default function playBrainCalc() {
