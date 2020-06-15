@@ -13,10 +13,9 @@ export default function playGame(rule, getQuestion, getTrueAnswer) {
     if (answerFromUser !== trueAnswer) {
       console.log(`"${answerFromUser}" is wrong answer ;(. Correct answer was "${trueAnswer}".
 Let's try again, ${userName}!`);
-      return false;
+      return;
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
-  return true;
 }
