@@ -1,11 +1,7 @@
 import { getRandomNumber } from '../../utils.js';
 import playGame from '../../playGame.js';
 
-let operator;
-let firstOperand;
-let secondOperand;
-
-function getTrueAnswer() {
+function getTrueAnswer(firstOperand, secondOperand, operator) {
   if (operator === '+') return (firstOperand + secondOperand).toString();
   if (operator === '*') return (firstOperand * secondOperand).toString();
   return (firstOperand - secondOperand).toString();
@@ -15,14 +11,16 @@ export const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
-function getQuestion() {
-  operator = operators[getRandomNumber(3, 0)];
-  firstOperand = getRandomNumber();
-  secondOperand = getRandomNumber();
+function getQuestionAndTrueAnswer() {
+  const operator = operators[getRandomNumber(3, 0)];
+  const firstOperand = getRandomNumber();
+  const secondOperand = getRandomNumber();
+  const question = `${firstOperand} ${operator} ${secondOperand}`;
+  const trueAnswer = getTrueAnswer(firstOperand, secondOperand, operator);
 
-  return `${firstOperand} ${operator} ${secondOperand}`;
+  return [question, trueAnswer];
 }
 
 export default function playBrainCalc() {
-  playGame(rule, getQuestion, getTrueAnswer);
+  playGame(rule, getQuestionAndTrueAnswer);
 }

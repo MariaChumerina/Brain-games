@@ -3,7 +3,7 @@ export function getRandomNumber(rightBorder = 100, leftBorder = 1) {
 }
 
 export function getTwoRandomNumbers() {
-  return `${getRandomNumber(100, 1)} ${getRandomNumber(100)}`;
+  return [getRandomNumber(100, 1), getRandomNumber(100, 1)];
 }
 
 

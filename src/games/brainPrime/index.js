@@ -9,16 +9,15 @@ function isPrime(number) {
   }
   return true;
 }
-function getTrueAnswer(number) {
-  return isPrime(number) ? 'yes' : 'no';
-}
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export function getQuestion() {
-  return getRandomNumber();
+export function getQuestionAndTrueAnswer() {
+  const randomNumber = getRandomNumber();
+  const trueAnswer = isPrime(randomNumber) ? 'yes' : 'no';
+  return [randomNumber, trueAnswer];
 }
 
 export default function playBrainPrime() {
-  playGame(rule, getQuestion, getTrueAnswer);
+  playGame(rule, getQuestionAndTrueAnswer);
 }
