@@ -4,8 +4,9 @@ import playGame from '../../playGame.js';
 export const rule = 'What number is missing in the progression?';
 
 function getProgressionWithSkipNum(progression, indexOfSkippingEl) {
-  progression[indexOfSkippingEl] = '..';
-  return progression.join(' ');
+  const copyProgression = progression.slice();
+  copyProgression[indexOfSkippingEl] = '..';
+  return copyProgression.join(' ');
 }
 
 function getQuestionAndTrueAnswer() {
