@@ -1,6 +1,8 @@
 import getRandomNumber from '../../utils.js';
 import playGame from '../../playGame.js';
 
+export const rule = 'What is the result of the expression?';
+
 function getTrueAnswer(firstOperand, secondOperand, operator) {
   switch (operator) {
     case ('+'):
@@ -12,8 +14,6 @@ function getTrueAnswer(firstOperand, secondOperand, operator) {
     default: return 'Something went wrong';
   }
 }
-
-export const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 function getRandomOperator() {

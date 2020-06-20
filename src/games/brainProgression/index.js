@@ -3,7 +3,6 @@ import playGame from '../../playGame.js';
 
 export const rule = 'What number is missing in the progression?';
 
-
 export function getProgression() {
   const progression = [];
   progression[0] = getRandomNumber(10);

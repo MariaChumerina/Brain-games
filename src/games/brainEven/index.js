@@ -1,11 +1,11 @@
 import getRandomNumber from '../../utils.js';
 import playGame from '../../playGame.js';
 
+export const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 function isEven(number) {
   return number % 2 === 0;
 }
-
-export const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function getTerms() {
   const randomNumber = getRandomNumber();
