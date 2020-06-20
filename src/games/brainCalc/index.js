@@ -2,16 +2,22 @@ import { getRandomNumber } from '../../utils.js';
 import playGame from '../../playGame.js';
 
 function getTrueAnswer(firstOperand, secondOperand, operator) {
-  if (operator === '+') return (firstOperand + secondOperand).toString();
-  if (operator === '*') return (firstOperand * secondOperand).toString();
-  return (firstOperand - secondOperand).toString();
+  switch (operator) {
+    case ('+'):
+      return (firstOperand + secondOperand).toString();
+    case ('-'):
+      return (firstOperand - secondOperand).toString();
+    case ('*'):
+      return (firstOperand * secondOperand).toString();
+    default: return 'Something went wrong';
+  }
 }
 
 export const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
-function getQuestionAndTrueAnswer() {
+function getTerms() {
   const operator = operators[getRandomNumber(3, 0)];
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
@@ -22,5 +28,5 @@ function getQuestionAndTrueAnswer() {
 }
 
 export default function playBrainCalc() {
-  playGame(rule, getQuestionAndTrueAnswer);
+  playGame(rule, getTerms);
 }

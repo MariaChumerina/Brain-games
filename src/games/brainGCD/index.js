@@ -1,5 +1,5 @@
-import { getTwoRandomNumbers } from '../../utils.js';
 import playGame from '../../playGame.js';
+import { getRandomNumber } from '../../utils.js';
 
 function calcTrueAnswer(firstRandomNumber, secondRandomNumber) {
   for (let i = secondRandomNumber; i > 1; i -= 1) {
@@ -12,12 +12,13 @@ function calcTrueAnswer(firstRandomNumber, secondRandomNumber) {
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-function getQuestionAndAnswer() {
-  const [firstRandomNumber, secondRandomNumber] = getTwoRandomNumbers();
+function getTerms() {
+  const firstRandomNumber = getRandomNumber();
+  const secondRandomNumber = getRandomNumber();
   const trueAnswer = calcTrueAnswer(firstRandomNumber, secondRandomNumber);
   return [`${firstRandomNumber} ${secondRandomNumber}`, trueAnswer];
 }
 
 export default function playBrainGCD() {
-  playGame(rule, getQuestionAndAnswer);
+  playGame(rule, getTerms);
 }

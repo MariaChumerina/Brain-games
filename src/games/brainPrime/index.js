@@ -12,12 +12,12 @@ function isPrime(number) {
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export function getQuestionAndTrueAnswer() {
+export function getTerms() {
   const randomNumber = getRandomNumber();
   const trueAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   return [randomNumber, trueAnswer];
 }
 
 export default function playBrainPrime() {
-  playGame(rule, getQuestionAndTrueAnswer);
+  playGame(rule, getTerms);
 }
