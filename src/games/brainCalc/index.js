@@ -16,9 +16,12 @@ function getTrueAnswer(firstOperand, secondOperand, operator) {
 export const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
+function getRandomOperator() {
+  return operators[getRandomNumber(3, 0)];
+}
 
 function getTerms() {
-  const operator = operators[getRandomNumber(3, 0)];
+  const operator = getRandomOperator();
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
   const question = `${firstOperand} ${operator} ${secondOperand}`;
