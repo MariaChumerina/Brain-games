@@ -16,7 +16,8 @@ function getTerms() {
   const firstRandomNumber = getRandomNumber();
   const secondRandomNumber = getRandomNumber();
   const trueAnswer = calcTrueAnswer(firstRandomNumber, secondRandomNumber);
-  return [`${firstRandomNumber} ${secondRandomNumber}`, trueAnswer];
+  const question = `${firstRandomNumber} ${secondRandomNumber}`;
+  return [question, trueAnswer];
 }
 
 export default function playBrainGCD() {

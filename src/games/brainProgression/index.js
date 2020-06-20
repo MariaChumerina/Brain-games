@@ -1,7 +1,19 @@
-import { getProgression, getRandomNumber } from '../../utils.js';
+import { getRandomNumber } from '../../utils.js';
 import playGame from '../../playGame.js';
 
 export const rule = 'What number is missing in the progression?';
+
+
+export function getProgression() {
+  const progression = [];
+  progression[0] = getRandomNumber(10);
+  const step = getRandomNumber(10);
+  for (let i = 1; i < 10; i += 1) {
+    progression[i] = progression[i - 1] + step;
+  }
+
+  return progression;
+}
 
 function getProgressionWithSkipNum(progression, indexOfSkippingEl) {
   const copyProgression = progression.slice();
