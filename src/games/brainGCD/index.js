@@ -1,5 +1,5 @@
 import playGame from '../../playGame.js';
-import { getRandomNumber } from '../../utils.js';
+import getRandomNumber from '../../utils.js';
 
 function calcTrueAnswer(firstRandomNumber, secondRandomNumber) {
   for (let i = secondRandomNumber; i > 1; i -= 1) {
