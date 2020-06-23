@@ -12,7 +12,7 @@ function calcGCD(firstRandomNumber, secondRandomNumber) {
   return '1';
 }
 
-function getTerms() {
+function getQuiz() {
   const firstRandomNumber = getRandomNumber();
   const secondRandomNumber = getRandomNumber();
   const answer = calcGCD(firstRandomNumber, secondRandomNumber);
@@ -21,5 +21,5 @@ function getTerms() {
 }
 
 export default function playBrainGCD() {
-  playGame(rule, getTerms);
+  playGame(rule, getQuiz);
 }

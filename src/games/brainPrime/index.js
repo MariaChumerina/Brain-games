@@ -12,12 +12,12 @@ function isPrime(number) {
   return true;
 }
 
-export function getTerms() {
+export function getQuiz() {
   const question = getRandomNumber();
   const trueAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, trueAnswer];
 }
 
 export default function playBrainPrime() {
-  playGame(rule, getTerms);
+  playGame(rule, getQuiz);
 }

@@ -7,12 +7,12 @@ function isEven(number) {
   return number % 2 === 0;
 }
 
-function getTerms() {
+function getQuiz() {
   const question = getRandomNumber();
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 }
 
 export default function playBrainEven() {
-  playGame(rule, getTerms);
+  playGame(rule, getQuiz);
 }

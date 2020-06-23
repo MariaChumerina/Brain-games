@@ -20,7 +20,7 @@ function getProgressionWithSkipppedNum(progression, indexOfSkippingEl) {
   return copyProgression.join(' ');
 }
 
-function getTerms() {
+function getQuiz() {
   const progression = getProgression();
   const indexOfSkippingEl = getRandomNumber(9, 0);
   const skippedNumber = progression[indexOfSkippingEl];
@@ -30,5 +30,5 @@ function getTerms() {
 }
 
 export default function playBrainProgression() {
-  playGame(rule, getTerms);
+  playGame(rule, getQuiz);
 }

@@ -20,7 +20,7 @@ function getRandomOperator() {
   return operators[getRandomNumber(3, 0)];
 }
 
-function getTerms() {
+function getQuiz() {
   const operator = getRandomOperator();
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
@@ -31,5 +31,5 @@ function getTerms() {
 }
 
 export default function playBrainCalc() {
-  playGame(rule, getTerms);
+  playGame(rule, getQuiz);
 }
