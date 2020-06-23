@@ -11,7 +11,7 @@ function getTrueAnswer(firstOperand, secondOperand, operator) {
       return (firstOperand - secondOperand).toString();
     case ('*'):
       return (firstOperand * secondOperand).toString();
-    default: return 'Something went wrong';
+    default: throw new Error('Something went wrong');
   }
 }
 
