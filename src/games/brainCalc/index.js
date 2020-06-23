@@ -3,7 +3,7 @@ import playGame from '../../playGame.js';
 
 export const rule = 'What is the result of the expression?';
 
-function getTrueAnswer(firstOperand, secondOperand, operator) {
+function getAnswerOfExpression(firstOperand, secondOperand, operator) {
   switch (operator) {
     case ('+'):
       return (firstOperand + secondOperand).toString();
@@ -25,7 +25,7 @@ function getTerms() {
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
   const question = `${firstOperand} ${operator} ${secondOperand}`;
-  const trueAnswer = getTrueAnswer(firstOperand, secondOperand, operator);
+  const trueAnswer = getAnswerOfExpression(firstOperand, secondOperand, operator);
 
   return [question, trueAnswer];
 }

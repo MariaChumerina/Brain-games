@@ -14,7 +14,7 @@ export function getProgression() {
   return progression;
 }
 
-function getProgressionWithSkipNum(progression, indexOfSkippingEl) {
+function getProgressionWithSkipppedNum(progression, indexOfSkippingEl) {
   const copyProgression = progression.slice();
   copyProgression[indexOfSkippingEl] = '..';
   return copyProgression.join(' ');
@@ -23,10 +23,10 @@ function getProgressionWithSkipNum(progression, indexOfSkippingEl) {
 function getTerms() {
   const progression = getProgression();
   const indexOfSkippingEl = getRandomNumber(9, 0);
-  const skippingNumber = progression[indexOfSkippingEl];
-  const question = getProgressionWithSkipNum(progression, indexOfSkippingEl);
-  const trueAnswer = skippingNumber.toString();
-  return [question, trueAnswer];
+  const skippedNumber = progression[indexOfSkippingEl];
+  const question = getProgressionWithSkipppedNum(progression, indexOfSkippingEl);
+  const answer = skippedNumber.toString();
+  return [question, answer];
 }
 
 export default function playBrainProgression() {

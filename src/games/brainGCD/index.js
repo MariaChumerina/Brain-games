@@ -3,7 +3,7 @@ import getRandomNumber from '../../utils.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-function calcTrueAnswer(firstRandomNumber, secondRandomNumber) {
+function calcGCD(firstRandomNumber, secondRandomNumber) {
   for (let i = secondRandomNumber; i > 1; i -= 1) {
     if (secondRandomNumber % i === 0 && firstRandomNumber % i === 0) {
       return i.toString();
@@ -15,9 +15,9 @@ function calcTrueAnswer(firstRandomNumber, secondRandomNumber) {
 function getTerms() {
   const firstRandomNumber = getRandomNumber();
   const secondRandomNumber = getRandomNumber();
-  const trueAnswer = calcTrueAnswer(firstRandomNumber, secondRandomNumber);
+  const answer = calcGCD(firstRandomNumber, secondRandomNumber);
   const question = `${firstRandomNumber} ${secondRandomNumber}`;
-  return [question, trueAnswer];
+  return [question, answer];
 }
 
 export default function playBrainGCD() {

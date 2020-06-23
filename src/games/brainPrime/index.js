@@ -13,9 +13,9 @@ function isPrime(number) {
 }
 
 export function getTerms() {
-  const randomNumber = getRandomNumber();
-  const trueAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  return [randomNumber, trueAnswer];
+  const question = getRandomNumber();
+  const trueAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, trueAnswer];
 }
 
 export default function playBrainPrime() {

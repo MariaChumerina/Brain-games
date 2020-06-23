@@ -8,9 +8,9 @@ function isEven(number) {
 }
 
 function getTerms() {
-  const randomNumber = getRandomNumber();
-  const trueAnswer = isEven(randomNumber) ? 'yes' : 'no';
-  return [randomNumber, trueAnswer];
+  const question = getRandomNumber();
+  const answer = isEven(question) ? 'yes' : 'no';
+  return [question, answer];
 }
 
 export default function playBrainEven() {
