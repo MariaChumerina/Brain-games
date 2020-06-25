@@ -3,14 +3,14 @@ import playGame from '../../playGame.js';
 
 export const rule = 'What is the result of the expression?';
 
-function getAnswerOfExpression(firstOperand, secondOperand, operator) {
+function calc(a, b, operator) {
   switch (operator) {
     case ('+'):
-      return (firstOperand + secondOperand).toString();
+      return (a + b).toString();
     case ('-'):
-      return (firstOperand - secondOperand).toString();
+      return (a - b).toString();
     case ('*'):
-      return (firstOperand * secondOperand).toString();
+      return (a * b).toString();
     default: throw new Error('Something went wrong');
   }
 }
@@ -25,9 +25,9 @@ function getQuiz() {
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
   const question = `${firstOperand} ${operator} ${secondOperand}`;
-  const trueAnswer = getAnswerOfExpression(firstOperand, secondOperand, operator);
+  const answer = calc(firstOperand, secondOperand, operator);
 
-  return [question, trueAnswer];
+  return [question, answer];
 }
 
 export default function playBrainCalc() {

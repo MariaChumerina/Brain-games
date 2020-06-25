@@ -14,7 +14,7 @@ export function getProgression() {
   return progression;
 }
 
-function getProgressionWithSkipppedNum(progression, indexOfSkippingEl) {
+function getProgressionWithSkippedNum(progression, indexOfSkippingEl) {
   const copyProgression = progression.slice();
   copyProgression[indexOfSkippingEl] = '..';
   return copyProgression.join(' ');
@@ -22,9 +22,9 @@ function getProgressionWithSkipppedNum(progression, indexOfSkippingEl) {
 
 function getQuiz() {
   const progression = getProgression();
-  const indexOfSkippingEl = getRandomNumber(9, 0);
-  const skippedNumber = progression[indexOfSkippingEl];
-  const question = getProgressionWithSkipppedNum(progression, indexOfSkippingEl);
+  const indexOfSkippedEl = getRandomNumber(9, 0);
+  const skippedNumber = progression[indexOfSkippedEl];
+  const question = getProgressionWithSkippedNum(progression, indexOfSkippedEl);
   const answer = skippedNumber.toString();
   return [question, answer];
 }

@@ -3,9 +3,9 @@ import getRandomNumber from '../../utils.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-function calcGCD(firstRandomNumber, secondRandomNumber) {
-  for (let i = secondRandomNumber; i > 1; i -= 1) {
-    if (secondRandomNumber % i === 0 && firstRandomNumber % i === 0) {
+function getGCD(a, b) {
+  for (let i = b; i > 1; i -= 1) {
+    if (b % i === 0 && a % i === 0) {
       return i.toString();
     }
   }
@@ -13,10 +13,10 @@ function calcGCD(firstRandomNumber, secondRandomNumber) {
 }
 
 function getQuiz() {
-  const firstRandomNumber = getRandomNumber();
-  const secondRandomNumber = getRandomNumber();
-  const answer = calcGCD(firstRandomNumber, secondRandomNumber);
-  const question = `${firstRandomNumber} ${secondRandomNumber}`;
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
+  const answer = getGCD(firstNumber, secondNumber);
+  const question = `${firstNumber} ${secondNumber}`;
   return [question, answer];
 }
 
