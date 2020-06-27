@@ -1,3 +1,3 @@
-export default function getRandomNumber(rightBorder = 100, leftBorder = 1) {
+export default function getRandomNumber(leftBorder = 1, rightBorder = 100) {
   return Math.floor((Math.random() * (rightBorder - leftBorder)) + leftBorder);
 }

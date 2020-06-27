@@ -17,7 +17,8 @@ function calc(a, b, operator) {
 
 const operators = ['+', '-', '*'];
 function getRandomOperator() {
-  return operators[getRandomNumber(3, 0)];
+  const operatorsLength = operators.length;
+  return operators[getRandomNumber(0, operatorsLength)];
 }
 
 function getQuiz() {

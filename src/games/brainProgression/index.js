@@ -21,12 +21,12 @@ function makeQuestion(progression, indexOfSkippedEl) {
 }
 
 function getQuiz() {
-  const maxFirstNum = 10;
-  const firstNumOfProgression = getRandomNumber(maxFirstNum);
-  const maxStep = 10;
-  const step = getRandomNumber(maxStep);
+  const [minFirstNum, maxFirstNum] = [1, 10];
+  const firstNumOfProgression = getRandomNumber(minFirstNum, maxFirstNum);
+  const [minStep, maxStep] = [1, 10];
+  const step = getRandomNumber(minStep, maxStep);
   const progression = getProgression(firstNumOfProgression, step);
-  const indexOfSkippedEl = getRandomNumber(progression.length , 0);
+  const indexOfSkippedEl = getRandomNumber(0, progression.length );
   const skippedNumber = progression[indexOfSkippedEl];
   const question = makeQuestion(progression, indexOfSkippedEl);
   const answer = skippedNumber.toString();
