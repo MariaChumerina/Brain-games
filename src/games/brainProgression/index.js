@@ -26,7 +26,7 @@ function getQuiz() {
   const [minStep, maxStep] = [1, 10];
   const step = getRandomNumber(minStep, maxStep);
   const progression = getProgression(firstNumOfProgression, step);
-  const indexOfSkippedEl = getRandomNumber(0, progression.length );
+  const indexOfSkippedEl = getRandomNumber(0, progression.length);
   const skippedNumber = progression[indexOfSkippedEl];
   const question = makeQuestion(progression, indexOfSkippedEl);
   const answer = skippedNumber.toString();

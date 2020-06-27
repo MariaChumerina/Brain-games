@@ -6,16 +6,16 @@ const rule = 'Find the greatest common divisor of given numbers.';
 function getGCD(a, b) {
   for (let i = b; i > 1; i -= 1) {
     if (b % i === 0 && a % i === 0) {
-      return i.toString();
+      return i;
     }
   }
-  return '1';
+  return 1;
 }
 
 function getQuiz() {
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
-  const answer = getGCD(firstNumber, secondNumber);
+  const answer = (getGCD(firstNumber, secondNumber)).toString();
   const question = `${firstNumber} ${secondNumber}`;
   return [question, answer];
 }

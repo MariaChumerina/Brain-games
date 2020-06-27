@@ -6,11 +6,11 @@ export const rule = 'What is the result of the expression?';
 function calc(a, b, operator) {
   switch (operator) {
     case ('+'):
-      return (a + b).toString();
+      return (a + b);
     case ('-'):
-      return (a - b).toString();
+      return (a - b);
     case ('*'):
-      return (a * b).toString();
+      return (a * b);
     default: throw new Error('Something went wrong');
   }
 }
@@ -26,9 +26,9 @@ function getQuiz() {
   const firstOperand = getRandomNumber();
   const secondOperand = getRandomNumber();
   const question = `${firstOperand} ${operator} ${secondOperand}`;
-  const answer = calc(firstOperand, secondOperand, operator);
+  const answer = (calc(firstOperand, secondOperand, operator)).toString();
 
-  return [question, answer];
+  return [question, answer.toString()];
 }
 
 export default function playBrainCalc() {
