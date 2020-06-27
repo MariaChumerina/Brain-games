@@ -3,28 +3,32 @@ import playGame from '../../playGame.js';
 
 export const rule = 'What number is missing in the progression?';
 
-export function getProgression() {
+export function getProgression(firstNumber, step) {
   const progression = [];
-  progression[0] = getRandomNumber(10);
-  const step = getRandomNumber(10);
-  for (let i = 0; i < 10; i += 1) {
+  progression.push(firstNumber);
+  const progressionLength = 10;
+  for (let i = 0; i < progressionLength; i += 1) {
     progression[i] = (i + 1) * step;
   }
 
   return progression;
 }
 
-function getProgressionWithSkippedNum(progression, indexOfSkippingEl) {
+function makeQuestion(progression, indexOfSkippedEl) {
   const copyProgression = progression.slice();
-  copyProgression[indexOfSkippingEl] = '..';
+  copyProgression[indexOfSkippedEl] = '..';
   return copyProgression.join(' ');
 }
 
 function getQuiz() {
-  const progression = getProgression();
-  const indexOfSkippedEl = getRandomNumber(9, 0);
+  const maxFirstNum = 10;
+  const firstNumOfProgression = getRandomNumber(maxFirstNum);
+  const maxStep = 10;
+  const step = getRandomNumber(maxStep);
+  const progression = getProgression(firstNumOfProgression, step);
+  const indexOfSkippedEl = getRandomNumber(progression.length , 0);
   const skippedNumber = progression[indexOfSkippedEl];
-  const question = getProgressionWithSkippedNum(progression, indexOfSkippedEl);
+  const question = makeQuestion(progression, indexOfSkippedEl);
   const answer = skippedNumber.toString();
   return [question, answer];
 }
