@@ -11,7 +11,7 @@ function calc(a, b, operator) {
       return (a - b);
     case ('*'):
       return (a * b);
-    default: throw new Error('Something went wrong');
+    default: throw new Error('There is no such operation.');
   }
 }
 
@@ -28,7 +28,7 @@ function getQuiz() {
   const question = `${firstOperand} ${operator} ${secondOperand}`;
   const answer = (calc(firstOperand, secondOperand, operator)).toString();
 
-  return [question, answer.toString()];
+  return [question, answer];
 }
 
 export default function playBrainCalc() {

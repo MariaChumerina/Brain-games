@@ -12,8 +12,8 @@ export default function playGame(rule, getQuestionAndAnswer) {
     console.log(`Question: ${question}`);
     const answerFromUser = readlineSync.question('Your answer: ');
     if (answerFromUser !== trueAnswer) {
-      console.log(`"${answerFromUser}" is wrong answer ;(. Correct answer was "${trueAnswer}".
-Let's try again, ${userName}!`);
+      console.log(`"${answerFromUser}" is wrong answer ;(. Correct answer was "${trueAnswer}".`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');
